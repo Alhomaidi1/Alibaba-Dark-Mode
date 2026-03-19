@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Alibaba Dark Mode",
+  "version": "1.0",
+  "description": "Enable dark mode automatically on Alibaba.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.alibaba.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Alibaba Dark Mode"
+  }
+}
